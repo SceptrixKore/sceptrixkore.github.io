@@ -221,7 +221,7 @@ float: left;
 .n_block {
 	margin-left: auto;
     margin-right: auto;
-    width: 	550px;
+    width: 	340px;
     padding-bottom: 60px;
 }
 
@@ -468,7 +468,7 @@ h1 {
 
 }
 
-@media all and (max-width: 557px) {
+@media (max-width: 557px) {
 	.time {
 		display: none;
 	}
@@ -477,5 +477,30 @@ h1 {
 		background: center url(../img/min_logo.png) no-repeat;
 	}
 
+
+}
+
+@media (max-width: 400px) {
+	.H1 {
+		font-size: 32px;
+		line-height: 40px;
+		    padding-bottom: 30px;
+	}
+
+	.header	{
+		background: 25% 100px url(../img/back.png) no-repeat;
+	}
+
+	.h2_t {
+		font-size: 19pt;
+	}
+
+	.h3_t {
+		font-size: 14pt;
+	}
+
+	.adres_block	{
+		display: none;
+	}
 
 }

@@ -185,7 +185,7 @@ html.mmenu-right.mmenu-opening #mmenu-blocker
     height: 40px;
     padding: 0;
     position: absolute;
-    right: 65px;
+    left: 237px;
     top: 0;
     z-index: 2;
 }

@@ -87,7 +87,7 @@ font-weight: 600;
 padding-left: 9px;
 padding-top: 15px;
 float: left;
-
+color: white;
 }
 
 
@@ -171,6 +171,7 @@ float: left;
 	font-weight: 600;
 	color: white;
 	padding-bottom: 6px;
+	text-transform: uppercase;
 }
 
 .about_text {
@@ -221,8 +222,9 @@ float: left;
 .n_block {
 	margin-left: auto;
     margin-right: auto;
-    width: 	330px;
+    width: 	340px;
     padding-bottom: 60px;
+    text-align: center;
 }
 
 .about_img {
@@ -303,16 +305,16 @@ footer {
 #ddmenu li a {
   display: block;
   float: left;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+
 }
 
 #ddmenu ul {
   position: absolute;
   top: 35px;
-  width: 130px;
   background: #fff;
   display: none;
   margin: 0;
@@ -323,29 +325,9 @@ footer {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-#ddmenu ul:after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: 100%;
-  left: 8px;
-  border-width: 0 8px 8px 8px;
-  border-style: solid;
-  border-color: #fff transparent; 
-}
 
-#ddmenu ul:before {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: 100%;
-  left: 4px;
-  border-width: 0 10px 10px 10px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.1) transparent;  
-}
+
+
 
 #ddmenu ul li { 
   display: block; 
@@ -357,10 +339,10 @@ footer {
   display: block;
   width: 100%;
   padding: 6px 7px;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 nav {
@@ -392,122 +374,232 @@ nav {
 
 
 
-@media (max-width: 1200px){
- .desc {
- 	display: none;
- }
-h1 {
-	padding-bottom: 25px;
-}
-.books {
-	display: none;
-}
-.menu_link {
-	font-size: 16px;
-}
-
-.menu_li {
-	padding-right: 30px;
-}
-
-.logo_text {
-	padding-top: 25px;
-	font-size: 8pt;
-}
-
-.teacher {
- display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-}
 
 
-@media (max-width: 1170px) {
-	.container {
-		width: 95%;
-	}
+
+#myModal {
+  width: 298px; height: 300px;
+  margin: 0 auto;
+  padding: 18px 9px;
+  border-radius: 4px;
+  background: #fafafa;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  display: none;
+  opacity: 0;
+  z-index: 38;
+  text-align: center;
+}
+#myModal #myModal__close {
+  width: 21px; height: 21px;
+  position: absolute;
+  top: 1px; right: 11px;
+  cursor: pointer;
+  display: block;
+  font-size: 29px;
+}
+#myOverlay {
+  z-index: 37;
+  position: fixed;
+  background-color: rgba(0,0,0,.7);
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  cursor :pointer;
+  display :none;
 }
 
 
-@media (max-width:992px) {
-	.main_nav {
-		display: none;
-	}
-
-	.burger {
-		display: block;
-		padding-top: 25px;
-	}
-
-	.logo {
-		display: none;
-
-	}
-
-	.logo_text	{
-		display: none;
-	}
-
-	.logo_block {
-		background: center url(../img/logo2.png) no-repeat;
-		height: 100px;
-	}
-
-	.H1 {
-		font-size: 46px;	
-	}
-
+.link_text {
+	color: white;
+	margin: 0px;
 
 }
-
-@media (max-width: 668px){
-	.teacher {
-		display: none;
-	}
-
-}
-
-@media (max-width: 557px) {
-	.time {
-		display: none;
-	}
-
-	.logo_block {
-		background: center url(../img/min_logo.png) no-repeat;
-	}
-
-
-}
-
-@media (max-width: 436px) {
-	.H1 {
-		font-size: 32px;
-		line-height: 40px;
-		    padding-bottom: 30px;
-	}
-
-	.header	{
-		background: 25% 100px url(../img/back.png) no-repeat;
-	}
-
-	.h2_t {
-		font-size: 19pt;
-	}
-
-	.h3_t {
-		font-size: 14pt;
-	}
-
-
-}
-
-@media (max-width: 469px) {
-	.adres_block	{
-		display: none;
-	}
-
-}
-
 
 	
+.referal {
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1.2px;
+	font-family: Open Sans, sans-serif;
+	outline: 0;
+	padding-top: 10px;
+	font-weight: 300;
+
+}
+
+.referal:hover {
+	color: white;
+}
+
+.f_text {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	border-radius: 24px;
+	margin-top: 20px;
+}
+
+.f_button {
+	margin-top: 30px;
+    border-radius: 24px;
+    padding: 10px 20px;
+}
+
+.p_text {
+	 font-family: 'Open Sans';
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0px;
+}
+
+
+.min_logo {
+	display: none;
+}
+
+
+.call_but:hover {
+	color: white;
+}
+
+.footer_links {
+	float: right;
+	padding-top: 15px;
+}
+
+.o_block {
+	margin-left: auto;
+    margin-right: auto;
+    width: 380px;
+    padding-bottom: 60px;
+}
+
+.o_text {
+	padding-left: 55px;
+	text-transform: uppercase;
+	font-family: Open Sans, sans-serif;
+	font-weight: 300;
+	font-size: 11pt;
+}
+
+.o_img	{
+	float: left;
+	padding-top: 7px;
+}
+
+.page_block {
+	padding-top: 10px;
+}
+
+.o_header {
+	color: black;
+}
+
+.task_text {
+	
+	font-family: Open sans, sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 26px;
+	margin-bottom: 10px;
+}
+
+.o_download {
+	background-color: white;
+	font-family: Open Sans;
+	font-weight: 300;
+	font-size: 19px;
+	border: 1px solid black;
+	border-radius: 24px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 12px;
+	padding-bottom:12px;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	margin-top: 47px;
+}
+
+.download_t {
+	line-height: 32px;
+	margin-bottom: 27px;
+}
+
+.Objectives {
+	background: 80% bottom url(../img/back_o.png) no-repeat;
+	padding-bottom: 40px;
+}
+
+.help {
+	display: none;
+}
+
+.d_block {
+	width: 600px;
+}
+
+.d_text {
+	font-family: Open Sans, sans-serif;
+	font-size: 22pt;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-left: 65px;
+	line-height: 38px;
+	padding-top: 5px;
+}
+
+.page {
+	float: left;
+	padding-top: 10px;
+}
+
+.d_but {
+	padding-top: 20px;
+}
+
+.download_block {
+	padding-bottom: 20px;
+}
+
+
+.d_desc {
+	font-family: Open Sans, sans-serif;
+	font-size: 11.7pt;
+	font-weight: 300;
+	padding-left: 65px;
+	line-height: 28px;
+	
+}
+
+.desc_text {
+
+	font-family: Open Sans, sans-serif;
+	font-size: 16pt;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-left: 65px;
+	line-height: 38px;
+	padding-top: 5px;
+	margin: 0px;
+}
+
+
+.desk_but {
+	padding-top: 65px;
+}
+
+.spec_line {
+	padding-top: 35px;
+}
+.d_h2 {
+	font-size: 17pt;
+}
+
+
+.doc_line {
+	padding-top: 25px;
+}

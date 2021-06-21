@@ -1,5 +1,9 @@
 
-@media (max-width: 1200px){
+@media (max-width: 1199px){
+ .d_text {
+ 	padding-top: 0px;
+ }
+
  .desc {
  	display: none;
  }
@@ -100,13 +104,41 @@ h1 {
 
 }
 
+
+@media (max-width: 768px) {
+	.footer_links {
+		display: none;
+	}
+
+	.logo_f {
+		padding-bottom: 20px;
+	}
+
+	.min_logo {
+		padding-bottom: 20px;
+	}
+
+	.e_block {
+		width: 411px;
+	}
+
+    .help_s {
+		display: block;
+	}
+
+	.spec_line {
+		padding-top: 49px;
+	}
+
+}
+
 @media (max-width: 668px){
 	.teacher {
 		display: none;
 	}
 
 	.d_block {
-	width: 400px;
+	width: 372px;
 }
 
 	.referal	{
@@ -115,6 +147,19 @@ h1 {
 	}
 	.link_text {
 		display: none;
+	}
+
+
+	.help {
+		display: block;
+	}
+
+	.doc_block	{
+		width: 340px;
+
+	}
+	.doc_line {
+		padding-top: 39px;
 	}
 
 	
@@ -129,9 +174,6 @@ h1 {
 		background: center url(../img/min_logo.png) no-repeat;
 	}
 
-	.help {
-		display: block;
-	}
 
 	.doc_line {
 	padding-top: 40px;
@@ -147,8 +189,17 @@ h1 {
 		    padding-bottom: 30px;
 	}
 		.d_block {
-	width: 350px;
+	width: 316px;
 }
+	
+	.e_block {
+		width: 346px;
+	}
+
+	.m_block {
+		width: 223px;
+	}
+
 
 	.header	{
 		background: 25% 100px url(../img/back.png) no-repeat;

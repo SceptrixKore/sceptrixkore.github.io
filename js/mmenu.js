@@ -179,12 +179,15 @@
 
 
 				//	OPEN SUBMENU LINKS
+
+
 				click( $( 'a.' + cls( 'subopen' ) + ', ' + 'a.' + cls( 'subclose' ), $menu ),
 					function()
 					{
 						$( $(this).attr( 'href' ) ).trigger( evt( 'toggle' ) );
 					}
 				);
+				
 
 			}
 		);

@@ -77,6 +77,7 @@ float: left;
 
 .logo_f {
 	float: left;
+	padding-bottom: 20px;
 
 }
 
@@ -131,7 +132,7 @@ color: white;
 .h_block {
 	margin-left: auto;
     margin-right: auto;
-    width: 	250px;
+    width: 	200px;
 }
 .first_line {
 	float: left;
@@ -472,7 +473,7 @@ nav {
 .o_block {
 	margin-left: auto;
     margin-right: auto;
-    width: 380px;
+    width: 377px;
     padding-bottom: 60px;
 }
 
@@ -483,6 +484,12 @@ nav {
 	font-weight: 300;
 	font-size: 11pt;
 }
+
+.O_text_exp {
+
+	padding-top: 10px;
+}
+
 
 .o_img	{
 	float: left;
@@ -495,6 +502,7 @@ nav {
 
 .o_header {
 	color: black;
+	padding-top: 20px;
 }
 
 .task_text {
@@ -539,10 +547,11 @@ nav {
 }
 
 .d_block {
-	width: 600px;
+	width: 579px;
 }
 
 .d_text {
+	padding-top: 20px;
 	font-family: Open Sans, sans-serif;
 	font-size: 22pt;
 	font-weight: 400;
@@ -587,6 +596,9 @@ nav {
 	margin: 0px;
 }
 
+.help_s {
+	display: none;
+}
 
 .desk_but {
 	padding-top: 65px;
@@ -603,3 +615,41 @@ nav {
 .doc_line {
 	padding-top: 25px;
 }
+
+
+.e_block {
+	text-align: center;
+	    width: 619px;
+	    margin-left: auto;
+    margin-right: auto;
+}
+
+.m_block {
+	text-align: center;
+	width: 252px;
+	    margin-left: auto;
+    margin-right: auto;
+}
+
+.doc_block {
+	text-align: center;
+	width: 520px;
+	margin-left: auto;
+    margin-right: auto;	
+}
+
+
+.a_block {
+	text-align: center;
+	width: 217px;
+	margin-left: auto;
+    margin-right: auto;	
+}
+
+.t_block {
+	text-align: center;
+	width: 317px;
+	margin-left: auto;
+    margin-right: auto;	
+}
+

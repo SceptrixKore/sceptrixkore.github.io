@@ -5,24 +5,42 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Официальный сайт методического кабинета Донецкого политехнического колледжа">
+	<meta name="keywords" content="ДПК, Донецк, Техникум, Техникум в Донецке, образование ДНР" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="css/estilos.css">
+
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+        <script src="js/main.js"></script>
+
+
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/side-drawer.css">
 <link rel="stylesheet" type="text/css" href="css/media.css">
 <script src="js/mmenu.js"></script>
     <link rel="stylesheet" href="css/menu-style.css">
 </head>
-
-<header>
+<body>
+	<header>
 		<section class="header">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
 						<div class="logo_block">
-							<a href="#menu" class="burger"><img src="img/burger.png"></a>
+							<a href="#menu" class="burger" ><img src="img/burger.png" id="button-menu"></a>
 							<img class="logo" src="img/logo.png">
 								
 							</img>
@@ -35,22 +53,22 @@
 					<div class="col-xl-8 col-lg-8">
 							<nav class="main_nav">
 							      <ul id="ddmenu" class="menu_list">
-							        <li class="menu_li"><a class="menu_link" onclick="window.open('index.html')" href="index.html">ГЛАВНАЯ</a></li>
+							        <li class="menu_li"><a class="menu_link"  href="index.html">ГЛАВНАЯ</a></li>
 							        <li class="menu_li"><a  class="menu_link" href="#">ДЕЯТЕЛЬНОСТЬ КАБИНЕТА</a>
 							          <ul>
-							            <li class="menu_li"><a class="menu_link" onclick="window.open('plan.html')" href="plan.html">ПЛАН РАБОТ</a></li>
-							            <li class="menu_li"><a class="menu_link" href="development.html">МЕТОД. РАЗРАБОТКИ</a></li>
-							            <li class="menu_li"><a class="menu_link" onclick="window.open('Spec.html')" href="Spec.html">МЕТОД. ОБЕСПЕЧЕНИЕ</a></li>
-							            <li class="menu_li"><a class="menu_link" onclick="window.open('Maket.html')" href="Maket.html">МАКЕТЫ</a></li>
+							            <li class="menu_li"><a class="menu_link"  href="plan.html">ПЛАН РАБОТ</a></li>
+							            <li class="menu_li"> <a class="menu_link" href="development.html"> МЕТОД. РАЗРАБОТКИ</a></li>
+							            <li class="menu_li"><a class="menu_link" href="Spec.html">МЕТОД. ОБЕСПЕЧЕНИЕ</a></li>
+							            <li class="menu_li"><a class="menu_link"  href="Maket.html">МАКЕТЫ</a></li>
 							          </ul>
 							        </li>
 							        <li class="menu_li"><a class="menu_link" href="#">ДОКУМЕНТАЦИЯ</a>
 							          <ul>
-							            <li class="menu_li"><a class="menu_link" onclick="window.open('reg_doc.html')" href="reg_doc.html">ФЕДЕР. И РЕГ. ДОКУМЕНТАЦИЯ</a></li>
-							            <li class="menu_li"><a class="menu_link" onclick="window.open('local_act.html')" href="local_act.html">ЛОКАЛЬНЫЕ АКТЫ</a></li>
+							            <li class="menu_li"><a class="menu_link" href="reg_doc.html">ФЕДЕР. И РЕГ. ДОКУМЕНТАЦИЯ</a></li>
+							            <li class="menu_li"><a class="menu_link" href="local_act.html">ЛОКАЛЬНЫЕ АКТЫ</a></li>
 							            <li class="menu_li"><a class="menu_link" href="standarts.html">ФГОС СПО</a></li>
 			
-							            <li class="menu_li"><a class="menu_link" onclick="window.open('Exams.html')" href="Exams.html">ЕРЭ/ГВЭ</a></li>
+							            <li class="menu_li"><a class="menu_link" href="Exams.html">ЕРЭ/ГВЭ</a></li>
 							          </ul>
 							        </li >
 							        <li class="menu_li"><a class="menu_link" href="#">ПРОЧЕЕ</a>
@@ -63,41 +81,46 @@
 							        </li>
 							      </ul>
 							    </nav>
-							    <nav id="menu">
-								    <ul>
-								        <li><a href="index.html">ГЛАВНАЯ</a></li>
-								        
-								        <li>
-								            <a href="#about/">ДЕЯТЕЛЬНОСТЬ КАБИНЕТА</a>
-								            <ul>
-								                <li><a href="plan.html">ПЛАН РАБОТ</a></li>
-								                <li><a href="development.html">МЕТОД. РАЗРАБОТКИ</a></li>
-								                <li><a href="Spec.html">МЕТОД. ОБЕСПЕЧЕНИЕ</a></li>
-								                <li><a href="Maket.html">МАКЕТЫ</a></li>
-								            </ul>
-								        </li>
+							   
+								  <nav class="navegacion">
+								    <ul class="menu">
+								      <li class="title-menu">МЕНЮ</li>
+								      <li><a href="index.html"><span class="fa fa-home icon-menu"></span>ГЛАВНАЯ</a><li>
+								      <li class="item-submenu" menu="1">
+								        <a href="#">ДЕЯТЕЛЬНОСТЬ КАБИНЕТА</a>
+								        <ul class="submenu">
+								            <li class="title-menu"><span class="fa fa-suitcase icon-menu"></span>ДЕЯТЕЛЬНОСТЬ КАБИНЕТА</li>
+								            <li class="go-back">НАЗАД</li>
+								            <li><a href="plan.html">ПЛАН РАБОТ</a></li>
+								            <li><a href="development.html">МЕТОД. РАЗРАБОТКИ</a></li>
+								            <li><a href="Spec.html">МЕТОД. ОБЕСПЕЧЕНИЕ</a></li>
+								            <li><a href="Maket.html">МАКЕТЫ</a></li>
+								        </ul>
+								      </li>
+								      <li class="item-submenu" menu="2">
+								        <a href="#"><span class="fa fa-shopping-bag icon-menu"></span>ДОКУМЕНТАЦИЯ</a>
+								        <ul class="submenu">
+								          <li class="title-menu"><span class="fa fa-shopping-bag icon-menu"></span>ДОКУМЕНТАЦИЯ</li>
+								          <li class="go-back">НАЗАД</li>
+								          <li><a href="reg_doc.html">ФЕДЕР. И РЕГ. ДОКУМЕНТАЦИЯ</a><li>
+								          <li><a href="local_act.html">ЛОКАЛЬНЫЕ АКТЫ</a><li>
+								          <li><a href="ФГОС СПО">ФГОС СПО</a><li>
+								          	<li><a href="Exams.html"> ГВЭ/ЕРЭ </a><li>
+								         </ul>
+								       </li>
 
-								        <li>
-								            <a href="#about/">ДОКУМЕНТАЦИЯ</a>
-								            <ul>
-								                <li><a href="reg_doc.html">ФЕДЕР. И РЕГ. ДОКУМЕНТАЦИЯ</a></li>
-								                <li><a href="local_act.html">ЛОКАЛЬНЫЕ АКТЫ</a></li>
-								                <li><a href="standarts.html">ФГОС СПО</a></li>
-								                <li><a href="Exams.html"ЕРЭ\ГВЭ</a></li>
-								            </ul>
-								        </li>
-
-								        <li>
-								            <a href="#about/">ПРОЧЕЕ</a>
-								            <ul>
-								                <li><a href="#about/history/">ЦИКЛОВАЯ КОМИССИЯ</a></li>
-								                <li><a href="#about/team/">МЕТОД. СОВЕТ</a></li>
-								          
-								            </ul>
-								        </li>
-								        
+								       <li class="item-submenu" menu="3">
+								        <a href="#"><span class="fa fa-shopping-bag icon-menu"></span>ПРОЧЕЕ</a>
+								        <ul class="submenu">
+								          <li class="title-menu"><span class="fa fa-shopping-bag icon-menu"></span>ПРОЧЕЕ</li>
+								          <li class="go-back">НАЗАД</li>
+								          <li><a href="#">В РАЗРАБОТКЕ</a><li>
+								      
+								         </ul>
+								       </li>
+								      
 								    </ul>
-								</nav>
+								  </nav>
 					</div>
 				</div>
 			</div>
@@ -133,6 +156,7 @@
 					</div>
 				</div>
 		</header>
+		</section>
 			
 			<section class="develop">
 				<div class="container">
@@ -286,7 +310,7 @@
 <script type="text/javascript">
 $(document).ready(function(){
   $('a').on('click', function(e){
-    e.preventDefault();
+    
   });
     
   $('#ddmenu li').hover(function () {
